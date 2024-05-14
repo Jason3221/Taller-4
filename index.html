@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes por Colombia</title>
+    <link rel="stylesheet" href="../Taller4/css/estilos.css">
+
+</head>
+
+<body>
+
+    <script>
+        var imagenPrincipal = document.createElement("img")
+
+        imagenPrincipal.src = "recursos/ViasTren.jpg"
+        imagenPrincipal.style.width = "100%"
+        imagenPrincipal.style.height = "600px"
+        imagenPrincipal.style.position = "relative"
+
+        document.body.appendChild(imagenPrincipal)
+
+        var encabezado = document.createElement("header")
+        encabezado.innerHTML = `
+
+        <div class="seccionIzquierda">
+            <img src="recursos/LOGO 2.png" alt="" height="75px" width="100px">
+        </div>
+
+        <div class="seccionDerecha">
+        <div class="BotonVacio">
+        <a href="#" class="BotonInicio">HOME</a>
+        </div>
+        <a href="#">SERVICES</a>
+        <a href="#">EVENTS</a>
+        <a href="#">ABOUT US</a>
+        <a href="#" style = "margin-right: 15px;">CONTACT</a>
+
+        </div>
+    `
+        encabezado.style.display = "flex"
+        encabezado.style.top = "-550px"
+        encabezado.style.position = "relative"
+        encabezado.style.marginRight = "auto"
+        encabezado.style.marginLeft = "auto"
+        encabezado.style.height = "80px"
+        encabezado.style.width = "80%"
+        encabezado.style.alignItems = "center"
+        encabezado.style.backgroundColor = "white"
+
+        document.body.appendChild(encabezado)
+
+        var contenedorInfo = document.createElement("div")
+        contenedorInfo.innerHTML = `
+        <div>
+            <br>    
+        <span class="EtiquetaPrecio" style="font-size: 25px; background-color: red; padding: 10px 25px; color: white; ">$8,450</span>
+        <h3 style="color: black;">Venice Italy</h3>
+        <p>Travel is free responsive template by templatemo <br>
+           all images use in this template are from Unisplash</p>
+        <br>
+        <a href="#" style="background-color: #9fd133; color: white; padding: 15px 25px; " >PRE-BOOKING</a>
+        </div>
+        `
+        contenedorInfo.style.display = "flex"
+        contenedorInfo.style.position = "relative"
+        contenedorInfo.style.height = "250px"
+        contenedorInfo.style.width = "350px"
+        contenedorInfo.style.top = "-450px"
+        contenedorInfo.style.left = "120px"
+        contenedorInfo.style.backgroundColor = "white"
+        contenedorInfo.style.textAlign = "center"
+
+        document.body.appendChild(contenedorInfo)
+
+        var contenedorTarjetas = document.createElement("div")
+        contenedorTarjetas.innerHTML = `
+        <div>
+            <span class="tituloPais">ITALY</span>
+            <img src="recursos/italy.jpeg" alt="Italia" class="imagenPais">
+            <p style="color: #9fd133;">Rome, Milan, Naples</p>
+            <p style="color: #eb4245;">SILVER HOTEL, 4 NIGHTS, 5 STARS</p>
+            <br>
+            <a href="#" class="botonCompra">$1,800 BOOK NOW</a>
+        </div>
+
+        <div>
+            <span class="tituloPais">FRANCE</span>
+            <img src="recursos/France.jpeg" alt="Francia" class="imagenPais">
+            <p style="color: #9fd133;">Paris, Marseille, Lyon</p>
+            <p style="color: #eb4245;">NEW PLACE , 5 NIGHTS , 5 STARS </p>
+            <br>
+            <a href="#" class="botonCompra">$2,300 BOOK NOW</a>
+        </div>
+
+        <div>
+            <span class="tituloPais">GERMANY</span>
+            <img src="recursos/Germany.jpeg" alt="Alemania" class="imagenPais">
+            <p style="color: #9fd133;">Berlin, Hamburg, Munich</p>
+            <p style="color: #eb4245;">LUXE HOTEL, 5 NIGHTS, 6 STARS</p>
+            <br>
+            <a href="#" class="botonCompra">$3,100 BOOK NOW</a>
+        </div>
+
+        <div>
+            <span class="tituloPais">SPAIN</span>
+            <img src="recursos/Spain.jpeg" alt="España" class="imagenPais">
+            <p style="color: #9fd133;">Madrid, Barcelona, Valencia</p>
+            <p style="color: #eb4245;">GOOHD HOTEL, 4 NIGHTS, 6 STARS</p>
+            <br>
+            <a href="#" class="botonCompra">$4.800 BOOK NOW</a>
+        </div>
+
+        `
+        contenedorTarjetas.style.display = "flex"
+        contenedorTarjetas.style.gap = "80px"
+        contenedorTarjetas.style.marginLeft = "auto"
+        contenedorTarjetas.style.marginRight = "auto"
+        contenedorTarjetas.style.position = "relative"
+        contenedorTarjetas.style.margin = "0%"
+        contenedorTarjetas.style.marginTop = "-390px"
+
+        contenedorTarjetas.style.justifyContent = "center"
+        document.body.appendChild(contenedorTarjetas)
+
+        var imagenLogos = document.createElement("img")
+
+        imagenLogos.src = "recursos/Imagen-trabajo.jpg"
+        imagenLogos.style.width = "100%"
+        imagenLogos.style.height = "150px"
+        imagenLogos.style.marginTop = "180px"
+        imagenLogos.style.position = "absolute"
+
+        document.body.appendChild(imagenLogos)
+
+        var piePagina = document.createElement("div")
+
+        piePagina.innerHTML = `
+        <div class="seccionInferiorIzquierda" >
+            <img src="recursos/LOGO 2.png" alt="Logo" height="80px" width="140px">
+        </div>
+        <div class="seccionInferiorCentro">
+            <p>Copyright c 2084 Company Name-Travel by templatemo</p>
+        </div>
+        <div class="seccionInferiorDerecha">
+            <img src="recursos/BarraRedes.png" alt="Barra" height="100px" width="180px">
+        </div>
+
+        `
+        piePagina.style.display = "flex"
+        piePagina.style.width = "100%"
+        piePagina.style.justifyContent = "center"
+        piePagina.style.alignItems = "center"
+        piePagina.style.marginTop = "380px"
+
+        document.body.appendChild(piePagina)
+
+    </script>
+
+</body>
+
+</html>

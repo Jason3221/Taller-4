@@ -1,0 +1,68 @@
+/* nuevos_estilos.css */
+
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    position: relative;
+    min-height: 100vh;
+} 
+a {
+    text-decoration: none;
+}
+
+.seccionIzquierda {
+    width: 50%;
+    justify-content: left;
+}
+
+.seccionDerecha {
+    display: flex;
+    width: 50%;
+    justify-content: right;
+    gap: 10px;
+}
+
+.tituloPais {
+    background-color: #9fd133;
+    color: white;
+    padding: 19px;
+    display: flex;
+    width: 202px;
+    font-size: 15px;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.imagenPais {
+    height: 210px;
+    width: 240px;
+}
+
+.botonCompra {
+    background-color: #9fd133;
+    color: #fff;
+    border: none;
+    width: 202px;
+    padding: 19px;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.seccionInferiorIzquierda {
+    display: flex;
+    width: 50%;
+    justify-content: left;
+}
+
+.seccionInferiorCentro {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.seccionInferiorDerecha {
+    display: flex;
+    width: 50%;
+    justify-content: right;
+}
